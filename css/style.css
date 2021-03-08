@@ -52,12 +52,16 @@
   color: #FFF;
 }
 
+.width_contents {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
 .titles {
   text-align: center;
 }
 
 .main_titles {
-  background-color: #f2f2f2;
   padding: 250px 0;
 }
 
