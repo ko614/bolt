@@ -12,10 +12,9 @@
   align-items: center;
 }
 
-.fas {
-  color: #4e4e4e;
+.bolt_icon {
+  color: #333;
   font-size: 2em;
-  height: 100%;
 }
 
 .btn {
@@ -23,6 +22,11 @@
   color: #FFF;
   font-size: 12px;
   padding: 14px 12px;
+}
+
+.btn:hover a {
+  transition: 0.3;
+  color: #333;
 }
 
 .contents a {
@@ -89,6 +93,20 @@
 .images {
   display:flex;
   flex-wrap:wrap;
+}
+
+.images li a{
+  opacity: 0.7;
+}
+
+.images li a:hover {
+  opacity: 1;
+  transition: 0.3;
+}
+
+.images:hover a {
+  transition: 0.3;
+  opacity: 0.7;
 }
 
 .img_title {
@@ -167,20 +185,10 @@
 } 
 
 .navs {
-  display: flex;
-  justify-content: center;
   padding: 200px 0;
   display: table;
+  margin: 0 auto;
 }
-.fas {
-  color: #74cfae;
-  padding: 20px 0;
-}
-
-.fab {
-  color: #74cfae;
-}
-
 
 .navs li {
   font-size: 30px;
@@ -188,20 +196,31 @@
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  position: relative;
+  padding: 30px 0;
 }
 
 .navs li:hover {
-  
-  height: 100px;
-  background-color: blue;
+  background-color: #FFF;
+}
+
+.nav_icon {
+  color: #74cfae;
+}
+
+.bottom_bar {
+  background-color: #74cfae;
+  text-align: right;
+}
+
+.bottom_bar_text {
+  color: #FFF;
+  padding: 20px 0 25px 0;
+  margin-right: 150px;
 }
 
 
-.navs li:nth-child(1),
-.navs li:nth-child(3)
-{
-  font-size: 3.5em;
-}
+
 
 
 
