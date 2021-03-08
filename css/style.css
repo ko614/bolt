@@ -175,7 +175,8 @@
 
 }
 
-.skill_description {
+.width_contents_skill {
+  width: 100%;
   background-color: #4e4e4e;
 }
 
@@ -230,7 +231,6 @@
 }
 
 .bottom_bar {
-  background-color: #74cfae;
   text-align: right;
 }
 
