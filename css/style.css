@@ -1,4 +1,7 @@
 @charset "utf-8";
+body {
+  font-family: 'Lato';
+}
 
 .contents {
   width: 100%;
@@ -10,7 +13,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #f2f2f2;
+  z-index: 10;
 }
 
 .inner {
@@ -20,12 +23,12 @@
 
 .width_contents_header {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #FFF;
 }
 
 .header_parent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 15px 0;
   align-items: center;
 }
@@ -42,9 +45,13 @@
   padding: 14px 12px;
 }
 
+.btn a {
+  transition:all 0.3s;
+}
+
 .btn:hover a {
-  transition: 0.3;
   color: #333;
+
 }
 
 .contents a {
@@ -66,8 +73,9 @@
 }
 
 .site_title {
-  font-size: 90px;
+  font-family: 'Raleway';
   font-weight: 700;
+  font-size: 90px;
   color: #74cfae;
 }
 
@@ -87,6 +95,11 @@
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
+}
+
+.anime {
+  float: left;
+  display: block;
 }
 
 .main_right_description {
@@ -125,11 +138,11 @@
 
 .images li a{
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .images li a:hover {
   opacity: 1;
-  transition: 0.3;
 }
 
 .images:hover a {
@@ -163,10 +176,15 @@
   padding-bottom: 90px;
 }
 
+.mail_btn a {
+  align-items: center;
+}
+
 .main_bottom_description {
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
 }
 
 .image_bottom_description{
@@ -204,10 +222,15 @@
 
 .skill_circles li {
   padding-left: 180px;
+  color: #FFF;
 }
 
 .skill_circles li:first-child {
   padding-left: 0;
+}
+
+.skill_circles figcaption {
+  padding-top: 20px;
 }
 
 .navs {
@@ -217,8 +240,8 @@
 }
 
 .navs li {
-  font-size: 30px;
   width: 185px;
+  font-size: 30px;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -226,8 +249,16 @@
   padding: 30px 0;
 }
 
-.navs li:hover {
+.navs li a {
+  width: 185px;
+  display: block;
+  padding: 30px 0;
+  transition: all 0.3s;
+}
+
+.navs li a:hover {
   background-color: #FFF;
+
 }
 
 .nav_icon {
