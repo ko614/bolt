@@ -175,12 +175,12 @@
 .fas {
   color: #74cfae;
   padding: 20px 0;
-
 }
 
 .fab {
   color: #74cfae;
 }
+
 
 .navs li {
   font-size: 30px;
@@ -191,8 +191,9 @@
 }
 
 .navs li:hover {
-  background-color: blue;
+  
   height: 100px;
+  background-color: blue;
 }
 
 
