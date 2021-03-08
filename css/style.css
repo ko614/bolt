@@ -5,6 +5,23 @@
   background-color: #f2f2f2;
 }
 
+.contents header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.width_contents {
+  width: 100%;
+}
+
 .header_parent {
   display: flex;
   justify-content: space-around;
@@ -82,12 +99,14 @@
 
 .main_images {
   display: inline-block;
+  padding-top: 40px 0 90px 0;
 }
 
 .img_contents {
   width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-bottom: 70px;
 }
 
 .images {
@@ -112,8 +131,11 @@
 .img_title {
   text-align: center;
   font-size: 24px;
-  padding: 60px 0 40px 0;
   color: #333;	
+}
+
+.img_contents {
+  padding-top: 60px;
 }
 
 .images li {
@@ -135,7 +157,6 @@
 .main_bottom_description {
   display: flex;
   margin: 0 auto;
-  padding-bottom: 70px;
   justify-content: center;
 }
 
@@ -143,6 +164,10 @@
   text-align: center;
   color: #333;
   padding-right: 90px;
+  word-break: break-word;
+  width: 540px;
+  line-height: 25px;
+
 }
 
 .skill_description {
@@ -162,27 +187,18 @@
   padding-bottom: 100px;
 }
 
-.table_skill_images td {
+.skill_circles {
+  display: flex;
+  justify-content: center;
+}
+
+.skill_circles li {
   padding-left: 180px;
-  font-size: 16px;
-  color: #f2f2f2;
 }
 
-.table_skill_images td:first-child {
-  padding-left: 0px;
+.skill_circles li:first-child {
+  padding-left: 0;
 }
-
-.skill_description_titles td {
-  padding-bottom: 100px;
-}
-
-.table_skill_images td {
-  padding-top: 15px;
-}
-
-.skill_circles td {
-  padding-top: 0;
-} 
 
 .navs {
   padding: 200px 0;
