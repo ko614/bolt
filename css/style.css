@@ -16,6 +16,10 @@ body {
   z-index: 10;
 }
 
+.btn_contact {
+  width: 50px;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -39,14 +43,21 @@ body {
 }
 
 .btn {
-  background-color: #74cfae;
   color: #FFF;
   font-size: 12px;
-  padding: 14px 12px;
 }
 
+
+
 .btn a {
+  background-color: #74cfae;
   transition:all 0.3s;
+  width: 100%;
+  height: 100%;
+  display: block;
+  align-items: center;
+  padding: 14px 12px;
+  text-align: center;
 }
 
 .btn:hover a {
@@ -57,6 +68,10 @@ body {
 .contents a {
   text-decoration: none;
   color: #FFF;
+}
+
+.bolt_contents_main {
+  padding-top: 70px;
 }
 
 .width_contents {
@@ -178,6 +193,8 @@ body {
 
 .mail_btn a {
   align-items: center;
+  display: block;
+  width: 70px;
 }
 
 .main_bottom_description {
@@ -235,16 +252,14 @@ body {
 
 .navs {
   padding: 200px 0;
-  display: table;
+  display: flex;
   margin: 0 auto;
 }
 
 .navs li {
   width: 185px;
   font-size: 30px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  text-align: center;margin: 0 auto;
   position: relative;
   padding: 30px 0;
 }
@@ -296,6 +311,10 @@ body {
   .hamburger_icon{
     color: #f2f2f2;
     padding: 3px;
+  }
+
+  .bun_hum {
+    display: none;
   }
 
   .main_titles {
@@ -358,7 +377,7 @@ body {
 
   .btn {
     width: 100px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
   }
 
@@ -374,10 +393,6 @@ body {
     padding: 0;
   }
 
-  .navs {
-    display: none;
-  }
-
   }
 
  @media screen and (min-width:768px) and ( max-width:1199px) {
@@ -388,6 +403,10 @@ body {
    }
 
    .sp_icon {
+    display: none;
+  }
+
+  .bun_hum {
     display: none;
   }
 
