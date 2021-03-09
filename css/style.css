@@ -106,6 +106,7 @@ body {
   color: #FFF;
   width: 750px;
   text-align: center;
+  box-sizing: border-box;
 
 }
 
@@ -120,12 +121,10 @@ body {
 }
 
 .main_images {
-  display: inline-block;
   padding: 40px 0 90px 0;
 }
 
 .img_contents {
-  width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
   padding-bottom: 70px;
@@ -162,6 +161,7 @@ body {
 
 .images li {
   padding-left: 100px;
+  box-sizing: border-box;
 }
 
 .images li:first-child,
@@ -275,25 +275,208 @@ body {
   margin-right: 150px;
 }
 
-/* 
- @media screen and (min-width:767px) { 
-   .inner {
-   width: 97%;
+
+ @media screen and (max-width:767px) { 
+   .inner,
+   .img_contents {
+    width: 97%;
+    margin: auto;
    }
+
+   .pc_icon {
+     display: none;
+   }
+
+   .sp_icon {
+    border: 1px solid #ddd	;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .hamburger_icon{
+    color: #f2f2f2;
+    padding: 3px;
+  }
+
+  .main_titles {
+    padding: 160px 0;
+  }
+
+   .main_top {
+     display: block!important;
+     padding: 50px 0 25px 0;
+   }
+
+   .anime {
+    float: none;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .main_mini_title {
+    padding: 20px 0 35px 0;
+   }
+
+   .main_right_description {
+     width:  100%;
+   }
+
+   .main_images {
+     padding: 40px 0 80px 0;
+   }
+
+   .images {
+    display: block;
+    margin: 0 auto;
+  }
+
+   .images li:nth-child(4) {
+    padding: 80px 0 0 0;
+  }
+
+  .images li {
+    padding: 0;
+    text-align: center;
+  }
+
+  .images li:nth-child(5), 
+  .images li:nth-child(6) {
+    padding: 0;
+  }
+
+  .main_bottom_description {
+    display: block;
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .image_bottom_description {
+    text-align: center;
+    width: 97%;
+    padding: 0 0 40px 0;
+  }
+
+  .btn {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+   .skill_circles {
+     display: block;
+   }
+
+  .skill_circles li {
+    padding: 88px 0 0 0;
+  }
+
+  .skill_circles li:first-child {
+    padding: 0;
+  }
+
+  .navs {
+    display: none;
+  }
+
   }
 
  @media screen and (min-width:768px) and ( max-width:1199px) {
-   .inner {
+   .inner,
+   .img_contents {
      width: 97%;
+     margin: auto;
    }
+
+   .sp_icon {
+    display: none;
   }
 
+   .main_top {
+    display: block!important;
+    padding: 50px 0 25px 0;
+  }
+
+  .anime {
+   float: none;
+   display: flex;
+   margin: 0 auto;
+   padding-top: 50px;
+ }
+
+ .main_mini_title {
+  padding: 20px 0 35px 0;
+ }
+
+  .main_right_description {
+    width:  100%;
+  }
+
+  .main_images {
+    padding: 40px 0 80px 0;
+  }
+
+  .images {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .images li:nth-child(4) {
+    padding: 80px 0 0 0;
+  }
+
+  .images li {
+    padding: 0;
+    text-align: center;
+  }
+
+  .images li:nth-child(5), 
+  .images li:nth-child(6) {
+    padding: 0;
+  }
+
+  .main_bottom_description {
+    display: block;
+    width: 97%;
+  }
+
+  .image_bottom_description {
+    padding-bottom: 40px;
+    text-align: center;
+    text-align: center;
+    width: 97%;
+    padding: 0 0 40px 0;
+  }
+
+  .btn {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .skill_circles {
+    display: block;
+  }
+
+  .skill_circles li {
+    padding: 0;
+  }
+ 
+
+  }
+  
+
  @media screen and (min-width:1200px) {
-   .inner {
+   .inner,
+   .img_contents {
     width: 1100px;
+    margin: auto;
    }
 
- } */
+   .sp_icon {
+    display: none;
+  }
+
+ }
 
 
 
