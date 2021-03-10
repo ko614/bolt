@@ -1,6 +1,10 @@
 @charset "utf-8";
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
+}
+
+.is_raleway {
+  font-family: "Raleway";
 }
 
 .contents {
@@ -53,7 +57,7 @@ body {
 .btn  {
   background-color: #74cfae;
   transition:all 0.3s;
-  display: block;
+  display: inline-block;
   align-items: center;
   padding: 14px 12px;
   text-align: center;
@@ -92,7 +96,6 @@ body {
 
 
 .site_title {
-  font-family: 'Raleway';
   font-weight: 700;
   font-size: 90px;
   color: #74cfae;
@@ -101,7 +104,7 @@ body {
 .sub_title {
   font-size: 30px;
   color: #c0c0c0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .green_width {
@@ -120,17 +123,15 @@ body {
   display: block;
 }
 
-.main_right_description {
+.main_policy_description {
   color: #FFF;
   width: 650px;
   text-align: center;
   box-sizing: border-box;
-
 }
 
 .main_mini_title {
   font-size: 24px;
-  padding-bottom: 35px;
 }
 
 .main_mini_description {
@@ -178,6 +179,14 @@ body {
   box-sizing: border-box;
 }
 
+.images li img {
+  vertical-align: bottom;
+}
+
+.images li a {
+  display: inline-block;
+}
+
 .images li:first-child,
 .images li:nth-child(4) {
   margin-left: 0;
@@ -192,6 +201,11 @@ body {
 .mail_btn_parent {
   margin-left: 90px;
 }
+
+.mail_btn {
+  margin-left: 90px;
+}
+
 
 .mail_btn a {
   align-items: center;
@@ -211,7 +225,7 @@ body {
   text-align: center;
   color: #333;
   word-break: break-word;
-  width: 540px;
+  width: 510px;
   line-height: 25px;
 
 }
@@ -248,17 +262,18 @@ body {
 }
 
 .skill_circles li:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .skill_circles figcaption {
-  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .navs_inner {
   padding: 200px 0;
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
   
 }
 
@@ -266,9 +281,7 @@ body {
   width: 185px;
   font-size: 30px;
   text-align: center;
-  margin: 0 auto;
   position: relative;
-  padding: 30px 0;
 }
 
 .navs_inner li a {
@@ -313,52 +326,44 @@ body {
      display: none;
    }
 
-   .sp_icon {
+   .hamburger_icon {
     border: 1px solid #ddd	;
     border-radius: 4px;
     padding: 10px;
+    color: #ddd;
   }
 
-  .hamburger_icon{
-    color: #f2f2f2;
-    padding: 3px;
-  }
-
-  .bun_hum {
-    display: none;
-  }
-
-  .main_titles {
+  .title_inner {
     padding: 160px 0 130px 0;
   }
 
-   .main_top {
-     display: block!important;
+   .main_inner {
+     display: block;
      padding: 50px 0 25px 0;
+   }
+
+   .phone_block {
+     display: block;
    }
 
    .anime {
     float: none;
-    display: flex;
     margin: 0 auto;
   }
 
 
-   .main_right_description {
+   .main_policy_description {
      width:  100%;
+     margin-top: 20px;
    }
-
-   .main_images {
-     padding: 40px 0 80px 0;
-   }
-
+   
    .images {
     display: block;
     margin: 0 auto;
   }
 
    .images li:nth-child(4) {
-    padding: 80px 0 0 0;
+    margin: 80px 0 0 0;
   }
 
   .images li {
@@ -366,15 +371,18 @@ body {
     text-align: center;
   }
 
+  .images li:nth-child(2), 
+  .images li:nth-child(3), 
   .images li:nth-child(5), 
   .images li:nth-child(6) {
-    padding: 0;
+    margin: 0;
   }
 
   .main_bottom_description {
     display: block;
     width: 97%;
     margin: 0 auto;
+    margin-top: 90px;
   }
 
   .image_bottom_description {
@@ -390,25 +398,35 @@ body {
     text-align: center;
   }
 
+  .mail_btn {
+    width: 100px;
+    margin-top: 40px;
+    display: block;
+  }
+
    .skill_circles {
      display: block;
    }
 
   .skill_circles li {
-    padding: 88px 0 0 0;
+    margin: 88px 0 0 0;
+  }
+
+  .skill_circles li figure {
+    text-align: center;
   }
 
   .skill_circles li:first-child {
-    padding: 0;
+    margin: 0;
   }
 
-  .navs {
+  .navs_inner {
     display: block;
-    padding-top: 50px;
-    /* margin: 0 auto; */
+    padding: 50px 0;
   }
 
-  .navs li {
+  .navs_inner li {
+    margin: 0 auto;
     width: 100%;
   }
 
@@ -429,13 +447,13 @@ body {
     display: none;
   }
 
-  .bun_hum {
-    display: none;
+  .main_inner {
+    display: block;
+    padding: 50px 0 25px 0;
   }
 
-   .main_top {
-    display: block!important;
-    padding: 50px 0 25px 0;
+  .phone_block {
+    display: block;
   }
 
   .anime {
@@ -445,15 +463,16 @@ body {
  }
 
  .main_mini_title {
-  padding: 20px 0 35px 0;
+  margin-top: 20px;
  }
 
-  .main_right_description {
+  .main_policy_description {
     width:  100%;
+    margin-top: 20px;
   }
 
   .main_images {
-    padding: 40px 0 80px 0;
+    margin-top: 40px;
   }
 
   .images {
@@ -461,8 +480,8 @@ body {
     margin: 0 auto;
   }
 
-  .images li:nth-child(4) {
-    padding: 80px 0 0 0;
+   .images li:nth-child(4) {
+    margin: 80px 0 0 0;
   }
 
   .images li {
@@ -470,28 +489,34 @@ body {
     text-align: center;
   }
 
+  .images li:nth-child(2), 
+  .images li:nth-child(3), 
   .images li:nth-child(5), 
   .images li:nth-child(6) {
-    padding: 0;
+    margin: 0;
   }
 
   .main_bottom_description {
     display: block;
     width: 97%;
+    margin-top: 90px;
   }
 
   .image_bottom_description {
-    padding-bottom: 40px;
-    text-align: center;
     text-align: center;
     width: 97%;
-    padding: 0 0 40px 0;
   }
 
   .btn {
-    width: 100px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .mail_btn {
+    width: 100px;
+    margin-top: 40px;
+    display: block;
+
   }
 
   .skill_circles {
@@ -499,12 +524,12 @@ body {
   }
 
   .skill_circles li {
-    padding: 88px 0 0 0;
+    margin: 88px 0 0 0;
   }
 
-  .skill_circles li:first-child {
-    padding: 0;
-  }
+  .skill_circles li figure {
+    text-align: center;
+}
 
   .bottom_bar_text {
     padding-right: 10px;
