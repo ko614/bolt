@@ -3,6 +3,18 @@ body {
   font-family: "Lato";
 }
 
+a {
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.sp_icon {
+  display: none;
+}
+
 .is_raleway {
   font-family: "Raleway";
 }
@@ -54,7 +66,7 @@ body {
   font-size: 12px;
 }
 
-.btn  {
+.btn {
   background-color: #74cfae;
   transition:all 0.3s;
   display: inline-block;
@@ -63,7 +75,7 @@ body {
   text-align: center;
 }
 
-.btn:hover  {
+.btn:hover {
   color: #333;
 
 }
@@ -111,7 +123,7 @@ body {
   background-color: #74cfae;
 }
 
-.main_inner{
+.main_inner {
   background-color: #74cfae;
   display: flex;
   justify-content: space-around;
@@ -153,7 +165,7 @@ body {
   flex-wrap:wrap;
 }
 
-.images li a{
+.images li a {
   opacity: 0.7;
   transition: all 0.3s;
 }
@@ -181,14 +193,6 @@ body {
 
 .images li:nth-child(-n+3) {
   margin-top: 0;
-}
-
-.images li img {
-  vertical-align: bottom;
-}
-
-.images li a {
-  display: inline-block;
 }
 
 .images li:nth-child(3n+1) {
@@ -325,8 +329,8 @@ body {
   }
 
   .anime {
-  float: none;
-  margin: 0 auto;
+    float: none;
+    margin: 0 auto;
   }
 
   .main_policy_description {
@@ -365,7 +369,6 @@ body {
   }
 
   .btn {
-    width: 100px;
     margin: 0 auto;
     text-align: center;
   }
@@ -392,10 +395,6 @@ body {
   margin: 0;
 }
 
-  .main_mini_title {
-    margin-top: 20px;
-  }
-
   .main_policy_description {
     width:  100%;
     margin-top: 20px;
@@ -411,6 +410,10 @@ body {
 
   .pc_icon {
     display: none;
+  }
+
+  .sp_icon {
+    display: block;
   }
 
   .hamburger_icon {
@@ -443,26 +446,3 @@ body {
   }
 
   }
-
-@media screen and (min-width:768px) {
-
-  .sp_icon {
-    display: none;
-  }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
