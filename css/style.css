@@ -309,133 +309,10 @@ body {
   padding-right: 150px;
 }
 
-
- @media screen and (max-width:767px) { 
-   .inner,
-   .img_contents {
+@media screen and (max-width:1199px) {
+  .inner {
     width: 97%;
     margin: auto;
-   }
-
-   .pc_icon {
-     display: none;
-   }
-
-   .hamburger_icon {
-    border: 1px solid #ddd	;
-    border-radius: 4px;
-    padding: 10px;
-    color: #ddd;
-  }
-
-  .title_inner {
-    padding: 160px 0 130px 0;
-  }
-
-   .main_inner {
-     display: block;
-     padding: 50px 0 25px 0;
-   }
-
-   .phone_block {
-     display: block;
-   }
-
-   .anime {
-    float: none;
-    margin: 0 auto;
-  }
-
-
-   .main_policy_description {
-     width:  100%;
-     margin-top: 20px;
-   }
-   
-   .images {
-    display: block;
-    margin: 0 auto;
-  }
-
-   .images li:nth-child(3n+1) {
-    margin: 80px 0 0 0;
-  }
-
-  .images li:first-child {
-    margin-top: 40px;
-  }
-
-  .images li {
-    margin: 0;
-    text-align: center;
-  }
-
-  .main_bottom_description {
-    display: block;
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 90px;
-  }
-
-  .image_bottom_description {
-    text-align: center;
-    width: 97%;
-    margin: 0 auto;
-  }
-
-  .btn {
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .mail_btn {
-    width: 100px;
-    margin-top: 40px;
-    display: block;
-  }
-
-   .skill_circles {
-     display: block;
-   }
-
-  .skill_circles li {
-    margin: 88px 0 0 0;
-  }
-
-  .skill_circles li figure {
-    text-align: center;
-  }
-
-  .skill_circles li:first-child {
-    margin: 0;
-  }
-
-  .navs_inner {
-    display: block;
-    padding: 50px 0;
-  }
-
-  .navs_inner li {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .bottom_bar_text {
-    padding-right: 10px;
-  }
-
-  }
-
- @media screen and (min-width:768px) and ( max-width:1199px) {
-   .inner,
-   .img_contents {
-     width: 97%;
-     margin: auto;
-   }
-
-   .sp_icon {
-    display: none;
   }
 
   .main_inner {
@@ -448,31 +325,18 @@ body {
   }
 
   .anime {
-   float: none;
-   display: flex;
-   margin: 0 auto;
- }
-
- .main_mini_title {
-  margin-top: 20px;
- }
+  float: none;
+  margin: 0 auto;
+  }
 
   .main_policy_description {
     width:  100%;
     margin-top: 20px;
   }
 
-  .main_images {
-    margin-top: 40px;
-  }
-
   .images {
     display: block;
     margin: 0 auto;
-  }
-
-   .images li:nth-child(4) {
-    margin: 80px 0 0 0;
   }
 
   .images li:nth-child(3n+1) {
@@ -491,15 +355,17 @@ body {
   .main_bottom_description {
     display: block;
     width: 97%;
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   .image_bottom_description {
     text-align: center;
     width: 97%;
+    margin: 0 auto;
   }
 
   .btn {
+    width: 100px;
     margin: 0 auto;
     text-align: center;
   }
@@ -508,7 +374,6 @@ body {
     width: 100px;
     margin-top: 40px;
     display: block;
-
   }
 
   .skill_circles {
@@ -523,23 +388,70 @@ body {
     text-align: center;
 }
 
+  .skill_circles li:first-child {
+  margin: 0;
+}
+
+  .main_mini_title {
+    margin-top: 20px;
+  }
+
+  .main_policy_description {
+    width:  100%;
+    margin-top: 20px;
+  }
+
+  .main_images {
+    margin-top: 40px;
+  }
+
+}
+
+@media screen and (max-width:767px) { 
+
+  .pc_icon {
+    display: none;
+  }
+
+  .hamburger_icon {
+    border: 1px solid #ddd	;
+    border-radius: 4px;
+    padding: 10px;
+    color: #ddd;
+  }
+
+  .title_inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .site_title　{
+    font-size: 80px;
+  }
+
+  .navs_inner {
+    display: block;
+    padding: 50px 0;
+  }
+
+  .navs_inner li {
+    margin: 0 auto;
+    width: 100%;
+  }
+
   .bottom_bar_text {
     padding-right: 10px;
   }
 
-
   }
-  
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:768px) {
 
   .sp_icon {
     display: none;
   }
 
-}
+  }
 
-/* git テスト */
 
 
 
