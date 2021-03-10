@@ -145,7 +145,6 @@ body {
 }
 
 .img_inner {
-  margin: 0 auto;
   padding: 60px 0 70px 0;
 }
 
@@ -176,7 +175,12 @@ body {
 
 .images li {
   margin-left: 100px;
+  margin-top: 80px;
   box-sizing: border-box;
+}
+
+.images li:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .images li img {
@@ -187,15 +191,8 @@ body {
   display: inline-block;
 }
 
-.images li:first-child,
-.images li:nth-child(4) {
+.images li:nth-child(3n+1) {
   margin-left: 0;
-}
-
-.images li:nth-child(4),
-.images li:nth-child(5),
-.images li:nth-child(6) {
-  margin-top: 80px;
 }
 
 .mail_btn_parent {
@@ -221,13 +218,12 @@ body {
   margin-top: 90px;
 }
 
-.image_bottom_description{
+.image_bottom_description {
   text-align: center;
   color: #333;
   word-break: break-word;
   width: 510px;
   line-height: 25px;
-
 }
 
 .width_contents_skill {
@@ -236,7 +232,6 @@ body {
 
 .skill_inner {
   padding: 70px 0 120px 0;
-
 }
 
 .skill_title {
@@ -362,20 +357,17 @@ body {
     margin: 0 auto;
   }
 
-   .images li:nth-child(4) {
+   .images li:nth-child(3n+1) {
     margin: 80px 0 0 0;
   }
 
-  .images li {
-    padding: 0;
-    text-align: center;
+  .images li:first-child {
+    margin-top: 40px;
   }
 
-  .images li:nth-child(2), 
-  .images li:nth-child(3), 
-  .images li:nth-child(5), 
-  .images li:nth-child(6) {
+  .images li {
     margin: 0;
+    text-align: center;
   }
 
   .main_bottom_description {
@@ -388,7 +380,6 @@ body {
   .image_bottom_description {
     text-align: center;
     width: 97%;
-    padding: 0 0 40px 0;
     margin: 0 auto;
   }
 
@@ -484,16 +475,17 @@ body {
     margin: 80px 0 0 0;
   }
 
-  .images li {
-    padding: 0;
-    text-align: center;
+  .images li:nth-child(3n+1) {
+    margin: 80px 0 0 0;
   }
 
-  .images li:nth-child(2), 
-  .images li:nth-child(3), 
-  .images li:nth-child(5), 
-  .images li:nth-child(6) {
+  .images li:first-child {
+    margin-top: 40px;
+  }
+
+  .images li {
     margin: 0;
+    text-align: center;
   }
 
   .main_bottom_description {
@@ -534,23 +526,18 @@ body {
   .bottom_bar_text {
     padding-right: 10px;
   }
- 
+
 
   }
   
 
- @media screen and (min-width:1200px) {
-   .inner,
-   .img_contents {
-    width: 1100px;
-    margin: auto;
-   }
+@media screen and (min-width:1200px) {
 
-   .sp_icon {
+  .sp_icon {
     display: none;
   }
 
- }
+}
 
 /* git テスト */
 
