@@ -180,7 +180,7 @@ body {
 
 .img_title {
   font-size: 24px;
-  color: #333;	
+  color: #333;
 }
 
 .images li {
@@ -193,8 +193,7 @@ body {
   margin-top: 0;
 }
 
-.images li:nth-child(3n+1),
-.skill_circles li:first-child {
+.images li:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -277,19 +276,18 @@ body {
   color: #74cfae;
 }
 
-.fotter_inner {
+.footer_inner {
   padding: 20px 0 25px 0;
   color: #FFF;
+  text-align: right;
 }
 
 @media screen and (max-width:1199px) {
   .inner {
     width: 97%;
-    margin: auto;
   }
 
   .btn {
-    margin: 0 auto;
     text-align: center;
   }
 
@@ -299,7 +297,6 @@ body {
   }
 
   .phone_block {
-    font-size: 0;
     text-align: center;
   }
 
@@ -313,11 +310,11 @@ body {
   }
 
   .images li:nth-child(3n+1) {
-    margin: 80px 0 0 0;
+    margin-top: 80px;
   }
 
   .images li:first-child {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .images li {
@@ -327,17 +324,16 @@ body {
 
   .main_bottom_description {
     display: block;
-    width: 97%;
     margin-top: 80px;
   }
 
   .image_bottom_description {
-    width: 97%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .mail_btn {
-    margin-top: 40px;
+    margin: 40px auto 0;
     display: block;
     width: 20%;
   }
@@ -358,18 +354,9 @@ body {
     margin: 0;
   }
 
-  .main_policy_description {
-    width:  100%;
-    margin-top: 20px;
-  }
-
-  .main_images {
-    margin-top: 40px;
-  }
-
 }
 
-@media screen and (max-width:767px) { 
+@media screen and (max-width:767px) {
 
   .pc_icon {
     display: none;
@@ -383,7 +370,7 @@ body {
     padding: 160px 0 130px 0;
   }
 
-  .site_title　{
+  .site_title {
     font-size: 80px;
   }
 
@@ -393,7 +380,7 @@ body {
   }
 
   .navs_inner li {
-    margin: 0 auto;
+    width: 100%;
   }
 
   .bottom_bar_text {
